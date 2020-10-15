@@ -30,6 +30,12 @@
       <content type="html"><![CDATA[{$ post.content | noControlChars | safe $}]]></content>
       
       
+        <tags>
+            
+            <tag> {$ tag.name $} </tag>
+            
+        </tags>
+      
     </entry>
     
   
