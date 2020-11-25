@@ -6,7 +6,7 @@
   <link href="https://srp05.github.io/atom.xml" rel="self"/>
   
   <link href="https://srp05.github.io/"/>
-  <updated>2020-10-18T05:03:00.952Z</updated>
+  <updated>2020-11-25T02:37:01.559Z</updated>
   <id>https://srp05.github.io/</id>
   
   <author>
@@ -17,26 +17,193 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>KONG</title>
-    <link href="https://srp05.github.io/2020/10/17/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/"/>
-    <id>https://srp05.github.io/2020/10/17/%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B/</id>
+    <title>锤子剪刀布</title>
+    <link href="https://srp05.github.io/2020/11/25/%E9%94%A4%E5%AD%90%E5%89%AA%E5%88%80%E5%B8%83/"/>
+    <id>https://srp05.github.io/2020/11/25/%E9%94%A4%E5%AD%90%E5%89%AA%E5%88%80%E5%B8%83/</id>
+    <published>2020-11-25T02:25:00.000Z</published>
+    <updated>2020-11-25T02:37:01.559Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;大家应该都会玩“锤子剪刀布”的游戏：两人同时给出手势，胜负规则如图所示：&lt;br&gt;&lt;img src=&quot;/images/20131223134945_54426.jpg&quot; alt=&quot;图片描述&quot;&gt;&lt;br&gt;现给出两人的交锋记录，请统计双方的胜、平、负次数，并且给出双方分别出什么手势的胜算最大。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="简单模拟" scheme="https://srp05.github.io/tags/%E7%AE%80%E5%8D%95%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>沙漏图形 tri2str [1*+]</title>
+    <link href="https://srp05.github.io/2020/11/25/%E6%B2%99%E6%BC%8F%E5%9B%BE%E5%BD%A2-tri2str-1/"/>
+    <id>https://srp05.github.io/2020/11/25/%E6%B2%99%E6%BC%8F%E5%9B%BE%E5%BD%A2-tri2str-1/</id>
+    <published>2020-11-25T02:19:00.000Z</published>
+    <updated>2020-11-25T02:23:30.174Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;输入n，输出正倒n层星号三角形。首行顶格，星号间有一空格，效果见样例&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="图形输出" scheme="https://srp05.github.io/tags/%E5%9B%BE%E5%BD%A2%E8%BE%93%E5%87%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>等腰梯形</title>
+    <link href="https://srp05.github.io/2020/11/25/%E7%AD%89%E8%85%B0%E6%A2%AF%E5%BD%A2/"/>
+    <id>https://srp05.github.io/2020/11/25/%E7%AD%89%E8%85%B0%E6%A2%AF%E5%BD%A2/</id>
+    <published>2020-11-25T02:15:00.000Z</published>
+    <updated>2020-11-25T02:36:09.895Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;请输入高度h，输入一个高为h，上底边长为h 的等腰梯形（例如h=4，图形如下）。&lt;/p&gt;
+&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;strong&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;strong&quot;&gt; **&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;strong&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;strong&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="图形输出" scheme="https://srp05.github.io/tags/%E5%9B%BE%E5%BD%A2%E8%BE%93%E5%87%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>输出梯形</title>
+    <link href="https://srp05.github.io/2020/11/25/%E8%BE%93%E5%87%BA%E6%A2%AF%E5%BD%A2/"/>
+    <id>https://srp05.github.io/2020/11/25/%E8%BE%93%E5%87%BA%E6%A2%AF%E5%BD%A2/</id>
+    <published>2020-11-25T02:04:00.000Z</published>
+    <updated>2020-11-25T02:14:26.211Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;输入一个高度h，输出一个高为h，上底边为h的梯形。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="图形输出" scheme="https://srp05.github.io/tags/%E5%9B%BE%E5%BD%A2%E8%BE%93%E5%87%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>统计同成绩学生人数</title>
+    <link href="https://srp05.github.io/2020/11/25/%E7%BB%9F%E8%AE%A1%E5%90%8C%E6%88%90%E7%BB%A9%E5%AD%A6%E7%94%9F%E4%BA%BA%E6%95%B0/"/>
+    <id>https://srp05.github.io/2020/11/25/%E7%BB%9F%E8%AE%A1%E5%90%8C%E6%88%90%E7%BB%A9%E5%AD%A6%E7%94%9F%E4%BA%BA%E6%95%B0/</id>
+    <published>2020-11-25T02:01:00.000Z</published>
+    <updated>2020-11-25T02:03:41.822Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;读入N名学生的成绩，将获得某一给定分数的学生人数输出。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="查找元素" scheme="https://srp05.github.io/tags/%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学生查询</title>
+    <link href="https://srp05.github.io/2020/11/25/%E5%AD%A6%E7%94%9F%E6%9F%A5%E8%AF%A2/"/>
+    <id>https://srp05.github.io/2020/11/25/%E5%AD%A6%E7%94%9F%E6%9F%A5%E8%AF%A2/</id>
+    <published>2020-11-25T01:57:00.000Z</published>
+    <updated>2020-11-25T01:59:49.240Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;输入n个学生的信息，每行包括学号、姓名、性别和年龄，每一个属性使用空格分开。最后再输入一学号，将该学号对应的学生信息输出。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="查找元素" scheme="https://srp05.github.io/tags/%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>跟奥巴马一起编程</title>
+    <link href="https://srp05.github.io/2020/11/25/%E8%B7%9F%E5%A5%A5%E5%B7%B4%E9%A9%AC%E4%B8%80%E8%B5%B7%E7%BC%96%E7%A8%8B/"/>
+    <id>https://srp05.github.io/2020/11/25/%E8%B7%9F%E5%A5%A5%E5%B7%B4%E9%A9%AC%E4%B8%80%E8%B5%B7%E7%BC%96%E7%A8%8B/</id>
+    <published>2020-11-25T01:40:00.000Z</published>
+    <updated>2020-11-25T01:55:54.303Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;美国总统奥巴马不仅呼吁所有人都学习编程，甚至以身作则编写代码，成为美国历史上首位编写计算机代码的总统。2014 年底，为庆祝“计算机科学教育周”正式启动，奥巴马编写了很简单的计算机代码：在屏幕上画一个正方形。现在你也跟他一起画吧！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="图像输出" scheme="https://srp05.github.io/tags/%E5%9B%BE%E5%83%8F%E8%BE%93%E5%87%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>找x</title>
+    <link href="https://srp05.github.io/2020/11/25/%E6%89%BEx/"/>
+    <id>https://srp05.github.io/2020/11/25/%E6%89%BEx/</id>
+    <published>2020-11-25T01:36:00.000Z</published>
+    <updated>2020-11-25T01:39:06.121Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;输入一个数n，然后输入n个数值各不相同，再输入一个值x，输出这个值在这个数组中的下标（从0开始，若不在数组中则输出-1）。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="查找元素" scheme="https://srp05.github.io/tags/%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>挖掘机技术哪家强</title>
+    <link href="https://srp05.github.io/2020/11/25/%E6%8C%96%E6%8E%98%E6%9C%BA%E6%8A%80%E6%9C%AF%E5%93%AA%E5%AE%B6%E5%BC%BA/"/>
+    <id>https://srp05.github.io/2020/11/25/%E6%8C%96%E6%8E%98%E6%9C%BA%E6%8A%80%E6%9C%AF%E5%93%AA%E5%AE%B6%E5%BC%BA/</id>
+    <published>2020-11-25T01:25:00.000Z</published>
+    <updated>2020-11-25T01:34:45.905Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;为了用事实说明挖掘机技术到底哪家强，PAT组织了一场挖掘机技能大赛。现请你根据比赛结果统计出技术最强的那个学校。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="简单模拟" scheme="https://srp05.github.io/tags/%E7%AE%80%E5%8D%95%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>害死人不偿命的(3n+1)猜想</title>
+    <link href="https://srp05.github.io/2020/10/17/%E5%AE%B3%E6%AD%BB%E4%BA%BA%E4%B8%8D%E5%81%BF%E5%91%BD%E7%9A%84(3n+1)%E7%8C%9C%E6%83%B3/"/>
+    <id>https://srp05.github.io/2020/10/17/%E5%AE%B3%E6%AD%BB%E4%BA%BA%E4%B8%8D%E5%81%BF%E5%91%BD%E7%9A%84(3n+1)%E7%8C%9C%E6%83%B3/</id>
     <published>2020-10-17T15:47:00.000Z</published>
-    <updated>2020-10-18T05:03:00.952Z</updated>
+    <updated>2020-11-25T01:33:54.569Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;10-18&quot;&gt;&lt;a href=&quot;#10-18&quot; class=&quot;headerlink&quot; title=&quot;10.18&quot;&gt;&lt;/a&gt;10.18&lt;/h2&gt;</summary>
-      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;卡拉兹(Callatz)猜想：&lt;br&gt;对任何一个自然数n，如果它是偶数，那么把它砍掉一半；如果它是奇数，那么把(3n+1)砍掉一半。这样一直反复砍下去，最后一定在某一步得到n=1。卡拉兹在1950年的世界数学家大会上公布了这个猜想，传说当时耶鲁大学师生齐动员，拼命想证明这个貌似很傻很天真的命题，结果闹得学生们无心学业，一心只证(3n+1)，以至于有人说这是一个阴谋，卡拉兹是在蓄意延缓美国数学界教学与科研的进展……&lt;br&gt;我们今天的题目不是证明卡拉兹猜想，而是对给定的任一不超过1000的正整数n，简单地数一下，需要多少步（砍几下）才能得到n=1？&lt;/p&gt;</summary>
     
     
     
-    <category term="数学" scheme="https://srp05.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
+    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="微积分" scheme="https://srp05.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
-    
-    <category term="竞赛" scheme="https://srp05.github.io/tags/%E7%AB%9E%E8%B5%9B/"/>
+    <category term="简单模拟" scheme="https://srp05.github.io/tags/%E7%AE%80%E5%8D%95%E6%A8%A1%E6%8B%9F/"/>
     
   </entry>
   
