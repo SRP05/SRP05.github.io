@@ -28,7 +28,7 @@
 <meta property="og:description" content="题目描述：输入n，输出正倒n层星号三角形。首行顶格，星号间有一空格，效果见样例">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-25T02:19:00.000Z">
-<meta property="article:modified_time" content="2020-11-25T02:23:30.174Z">
+<meta property="article:modified_time" content="2020-11-26T01:49:49.721Z">
 <meta property="article:author" content="SRP05">
 <meta property="article:tag" content="图形输出">
 <meta name="twitter:card" content="summary">
@@ -220,10 +220,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-11-25 10:19:00 / Modified: 10:23:30" itemprop="dateCreated datePublished" datetime="2020-11-25T10:19:00+08:00">2020-11-25</time>
+              <time title="Created: 2020-11-25 10:19:00" itemprop="dateCreated datePublished" datetime="2020-11-25T10:19:00+08:00">2020-11-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-11-26 09:49:49" itemprop="dateModified" datetime="2020-11-26T09:49:49+08:00">2020-11-26</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -275,7 +281,7 @@
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*</span> <span class="emphasis">* *</span></span><br><span class="line"><span class="bullet"> *</span> <span class="emphasis">* </span></span><br><span class="line"><span class="emphasis">  *</span></span><br><span class="line"><span class="bullet"> *</span> <span class="emphasis">* </span></span><br><span class="line"><span class="emphasis">*</span> <span class="emphasis">* *</span></span><br></pre></td></tr></table></figure>
 <p>数据规模 1&lt;= n &lt;=50</p>
 <hr>
-<p>train of thought：</p>
+<p><strong><em>train of thought：</em></strong></p>
 <p><strong><em>code:</em></strong></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= (i<span class="number">-1</span>); j++)&#123;</span><br><span class="line">          <span class="built_in">printf</span>(<span class="string">&quot; &quot;</span>); </span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= n-i+<span class="number">1</span>; k++) &#123;</span><br><span class="line">          <span class="built_in">printf</span>(<span class="string">&quot;* &quot;</span>);</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= n; i++)&#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= (n-i); j++)&#123;</span><br><span class="line">          <span class="built_in">printf</span>(<span class="string">&quot; &quot;</span>); </span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">1</span>; k &lt;= i; k++) &#123;</span><br><span class="line">          <span class="built_in">printf</span>(<span class="string">&quot;* &quot;</span>);</span><br><span class="line">       &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;   </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
     </div>
@@ -396,7 +402,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -409,7 +415,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -474,12 +480,12 @@ src="//music.163.com/outchain/player?type=2&id=469838125&auto=1&height=66">
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="Symbols count total">9k</span>
+    <span title="Symbols count total">10k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">8 mins.</span>
+    <span title="Reading time total">9 mins.</span>
 </div>
 
 

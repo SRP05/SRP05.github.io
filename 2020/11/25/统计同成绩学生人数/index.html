@@ -28,9 +28,10 @@
 <meta property="og:description" content="题目描述：读入N名学生的成绩，将获得某一给定分数的学生人数输出。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-25T02:01:00.000Z">
-<meta property="article:modified_time" content="2020-11-25T02:03:41.822Z">
+<meta property="article:modified_time" content="2020-11-26T01:49:19.821Z">
 <meta property="article:author" content="SRP05">
 <meta property="article:tag" content="查找元素">
+<meta property="article:tag" content="待完成">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://srp05.github.io/2020/11/25/%E7%BB%9F%E8%AE%A1%E5%90%8C%E6%88%90%E7%BB%A9%E5%AD%A6%E7%94%9F%E4%BA%BA%E6%95%B0/">
@@ -220,10 +221,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-11-25 10:01:00 / Modified: 10:03:41" itemprop="dateCreated datePublished" datetime="2020-11-25T10:01:00+08:00">2020-11-25</time>
+              <time title="Created: 2020-11-25 10:01:00" itemprop="dateCreated datePublished" datetime="2020-11-25T10:01:00+08:00">2020-11-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-11-26 09:49:19" itemprop="dateModified" datetime="2020-11-26T09:49:19+08:00">2020-11-26</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -278,7 +285,7 @@
 <p><strong><em>输入样例：</em></strong><br>4<br>70 80 90 100<br>80<br>3<br>65 75 85<br>55<br>5<br>60 90 90 90 85<br>90<br>0</p>
 <p><strong><em>输出样例：</em></strong><br>1<br>0<br>3</p>
 <hr>
-<p>train of thought：</p>
+<p><strong><em>train of thought：</em></strong></p>
 <p><strong><em>code:</em></strong></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,score[<span class="number">1001</span>],k,ans;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;score[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;k);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(k==score[i])&#123;</span><br><span class="line">            ans++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
     </div>
@@ -307,6 +314,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0/" rel="tag"># 查找元素</a>
+              <a href="/tags/%E5%BE%85%E5%AE%8C%E6%88%90/" rel="tag"># 待完成</a>
           </div>
 
         
@@ -399,7 +407,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -412,7 +420,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -477,12 +485,12 @@ src="//music.163.com/outchain/player?type=2&id=469838125&auto=1&height=66">
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="Symbols count total">9k</span>
+    <span title="Symbols count total">10k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="Reading time total">8 mins.</span>
+    <span title="Reading time total">9 mins.</span>
 </div>
 
 
