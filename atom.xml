@@ -6,7 +6,7 @@
   <link href="https://srp05.github.io/atom.xml" rel="self"/>
   
   <link href="https://srp05.github.io/"/>
-  <updated>2021-04-14T11:30:14.696Z</updated>
+  <updated>2021-09-15T01:31:30.171Z</updated>
   <id>https://srp05.github.io/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>New file</title>
+    <link href="https://srp05.github.io/2021/09/15/New-file/"/>
+    <id>https://srp05.github.io/2021/09/15/New-file/</id>
+    <published>2021-09-15T01:29:17.000Z</published>
+    <updated>2021-09-15T01:31:30.171Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>C语言11.4</title>
@@ -382,26 +398,6 @@
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;输入n，输出正倒n层星号三角形。首行顶格，星号间有一空格，效果见样例&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="算法笔记" scheme="https://srp05.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="图形输出" scheme="https://srp05.github.io/tags/%E5%9B%BE%E5%BD%A2%E8%BE%93%E5%87%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>等腰梯形</title>
-    <link href="https://srp05.github.io/2020/11/25/%E7%AD%89%E8%85%B0%E6%A2%AF%E5%BD%A2/"/>
-    <id>https://srp05.github.io/2020/11/25/%E7%AD%89%E8%85%B0%E6%A2%AF%E5%BD%A2/</id>
-    <published>2020-11-25T02:15:00.000Z</published>
-    <updated>2021-04-14T11:19:52.094Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;题目描述：&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;请输入高度h，输入一个高为h，上底边长为h 的等腰梯形（例如h=4，图形如下）。&lt;/p&gt;
-&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;   &lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;strong&quot;&gt; **&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;strong&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;span class=&quot;strong&quot;&gt;****&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
