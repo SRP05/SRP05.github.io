@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.4.2">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -248,20 +248,6 @@
               </span>
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>761</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
             </span>
 
         </div>
@@ -273,19 +259,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong><em>题目描述：</em></strong><br>输入n个学生的信息，每行包括学号、姓名、性别和年龄，每一个属性使用空格分开。最后再输入一学号，将该学号对应的学生信息输出。</p>
-<a id="more"></a> 
+        <p><em><strong>题目描述：</strong></em><br>输入n个学生的信息，每行包括学号、姓名、性别和年龄，每一个属性使用空格分开。最后再输入一学号，将该学号对应的学生信息输出。</p>
+<span id="more"></span> 
 
 <hr>
-<p><strong><em>输入格式：</em></strong><br>测试数据有多组，第一行为样例数m。对于每个样例，第一行为学生人数n(n不超过20)，加下来n行每行4个整数分别表示学号、姓名、性别和年龄，最后一行表示查询的学号。</p>
-<p><strong><em>输出格式：</em></strong><br>输出m行，每行表示查询的学生信息，格式参见样例。</p>
+<p><em><strong>输入格式：</strong></em><br>测试数据有多组，第一行为样例数m。对于每个样例，第一行为学生人数n(n不超过20)，加下来n行每行4个整数分别表示学号、姓名、性别和年龄，最后一行表示查询的学号。</p>
+<p><em><strong>输出格式：</strong></em><br>输出m行，每行表示查询的学生信息，格式参见样例。</p>
 <hr>
-<p><strong><em>输入样例：</em></strong><br>1<br>4<br>1 李江 男 21<br>2 刘唐 男 23<br>3 张军 男 19<br>4 王娜 女 19<br>2</p>
-<p><strong><em>输出样例：</em></strong><br>2 刘唐 男 23</p>
+<p><em><strong>输入样例：</strong></em><br>1<br>4<br>1 李江 男 21<br>2 刘唐 男 23<br>3 张军 男 19<br>4 王娜 女 19<br>2</p>
+<p><em><strong>输出样例：</strong></em><br>2 刘唐 男 23</p>
 <hr>
-<p><strong><em>train of thought：</em></strong></p>
-<p><strong><em>code:</em></strong></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">char</span> name[<span class="number">20</span>];</span><br><span class="line">    <span class="keyword">char</span> sex[<span class="number">10</span>];</span><br><span class="line">    <span class="keyword">int</span> number;</span><br><span class="line">&#125; stu[<span class="number">20</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d %s %s %d&quot;</span>, &amp;stu[j].id, &amp;stu[j].name, &amp;stu[j].sex, &amp;stu[j].number);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> k;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;k);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (k == stu[i].id)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d %s %s %d\n&quot;</span>, stu[i].id, stu[i].name, stu[i].sex, stu[i].number);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em><strong>train of thought：</strong></em></p>
+<p><em><strong>code:</strong></em></p>
+<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include &lt;cstdio&gt;</span></span><br><span class="line">struct student</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">int</span> id;</span><br><span class="line">    char name[<span class="number">20</span>];</span><br><span class="line">    char sex[<span class="number">10</span>];</span><br><span class="line">    <span class="keyword">int</span> number;</span><br><span class="line">&#125; stu[<span class="number">20</span>];</span><br><span class="line"><span class="keyword">int</span> main()</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++)</span><br><span class="line">    &#123;</span><br><span class="line">        scanf(<span class="string">&quot;%d %s %s %d&quot;</span>, &amp;stu[j].id, &amp;stu[j].name, &amp;stu[j].sex, &amp;stu[j].number);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> k;</span><br><span class="line">    scanf(<span class="string">&quot;%d&quot;</span>, &amp;k);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (k == stu[i].id)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">printf</span>(<span class="string">&quot;%d %s %s %d\n&quot;</span>, stu[i].id, stu[i].name, stu[i].sex, stu[i].number);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -479,16 +465,6 @@ src="//music.163.com/outchain/player?type=2&id=469838125&auto=1&height=66">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">SRP05</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    <span title="Symbols count total">20k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="Reading time total">18 mins.</span>
 </div>
 
 

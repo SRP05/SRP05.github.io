@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.4.2">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -248,20 +248,6 @@
               </span>
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>870</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
             </span>
 
         </div>
@@ -273,19 +259,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong><em>题目描述：</em></strong><br>给出年分m和一年中的第n天，算出第n天是几月几号。</p>
-<a id="more"></a> 
+        <p><em><strong>题目描述：</strong></em><br>给出年分m和一年中的第n天，算出第n天是几月几号。</p>
+<span id="more"></span> 
 
 <hr>
-<p><strong><em>输入格式：</em></strong><br>输入包括两个整数y(1&lt;=y&lt;=3000)，n(1&lt;=n&lt;=366)。</p>
-<p><strong><em>输出格式：</em></strong><br>可能有多组测试数据，对于每组数据，按 yyyy-mm-dd的格式将输入中对应的日期打印出来。</p>
+<p><em><strong>输入格式：</strong></em><br>输入包括两个整数y(1&lt;&#x3D;y&lt;&#x3D;3000)，n(1&lt;&#x3D;n&lt;&#x3D;366)。</p>
+<p><em><strong>输出格式：</strong></em><br>可能有多组测试数据，对于每组数据，按 yyyy-mm-dd的格式将输入中对应的日期打印出来。</p>
 <hr>
-<p><strong><em>输入样例：</em></strong><br>2013 60<br>2012 300<br>2011 350<br>2000 211</p>
-<p><strong><em>输出样例：</em></strong><br>2013-03-01<br>2012-10-26<br>2011-12-16<br>2000-07-29</p>
+<p><em><strong>输入样例：</strong></em><br>2013 60<br>2012 300<br>2011 350<br>2000 211</p>
+<p><em><strong>输出样例：</strong></em><br>2013-03-01<br>2012-10-26<br>2011-12-16<br>2000-07-29</p>
 <hr>
-<p><strong><em>train of thought：</em></strong></p>
-<p><strong><em>code:</em></strong></p>
-<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"><span class="built_in">bool</span> isyear(<span class="built_in">int</span> n)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> (n % <span class="number">400</span> == <span class="number">0</span>) || (n % <span class="number">100</span> != <span class="number">0</span> &amp;&amp; n % <span class="number">4</span> == <span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">int</span> month[<span class="number">13</span>][<span class="number">2</span>] = &#123;&#123;<span class="number">0</span>, <span class="number">0</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">28</span>, <span class="number">29</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;&#125;;</span><br><span class="line"><span class="built_in">int</span> main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">int</span> time, m = <span class="number">1</span>, i = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">int</span> conut, j = <span class="number">1</span>;</span><br><span class="line">    scanf(<span class="string">&quot;%d%d&quot;</span>, &amp;time, &amp;conut);</span><br><span class="line">    <span class="keyword">while</span> (j &lt;= conut)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (i == month[m][isyear(time)] + <span class="number">1</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            m++;</span><br><span class="line">            i = <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        j++;</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    i--;</span><br><span class="line">    printf(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, time, m, i);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em><strong>train of thought：</strong></em></p>
+<p><em><strong>code:</strong></em></p>
+<figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">#include <span class="tag">&lt;<span class="name">stdio.h</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">bool isyear(int n)</span></span><br><span class="line"><span class="language-xml">&#123;</span></span><br><span class="line"><span class="language-xml">    return (n % 400 == 0) || (n % 100 != 0 &amp;&amp; n % 4 == 0);</span></span><br><span class="line"><span class="language-xml">&#125;</span></span><br><span class="line"><span class="language-xml">int month[13][2] = </span><span class="template-variable">&#123;&#123;0, 0&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">28</span>, <span class="number">29</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;, &#123;<span class="number">30</span>, <span class="number">30</span>&#125;, &#123;<span class="number">31</span>, <span class="number">31</span>&#125;&#125;</span><span class="language-xml">;</span></span><br><span class="line"><span class="language-xml">int main()</span></span><br><span class="line"><span class="language-xml">&#123;</span></span><br><span class="line"><span class="language-xml">    int time, m = 1, i = 1;</span></span><br><span class="line"><span class="language-xml">    int conut, j = 1;</span></span><br><span class="line"><span class="language-xml">    scanf(&quot;%d%d&quot;, &amp;time, &amp;conut);</span></span><br><span class="line"><span class="language-xml">    while (j &lt;= conut)</span></span><br><span class="line"><span class="language-xml">    &#123;</span></span><br><span class="line"><span class="language-xml">        if (i == month[m][isyear(time)] + 1)</span></span><br><span class="line"><span class="language-xml">        &#123;</span></span><br><span class="line"><span class="language-xml">            m++;</span></span><br><span class="line"><span class="language-xml">            i = 1;</span></span><br><span class="line"><span class="language-xml">        &#125;</span></span><br><span class="line"><span class="language-xml">        j++;</span></span><br><span class="line"><span class="language-xml">        i++;</span></span><br><span class="line"><span class="language-xml">    &#125;</span></span><br><span class="line"><span class="language-xml">    i--;</span></span><br><span class="line"><span class="language-xml">    printf(&quot;%04d-%02d-%02d\n&quot;, time, m, i);</span></span><br><span class="line"><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">    return 0;</span></span><br><span class="line"><span class="language-xml">&#125;</span></span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -479,16 +465,6 @@ src="//music.163.com/outchain/player?type=2&id=469838125&auto=1&height=66">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">SRP05</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    <span title="Symbols count total">20k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="Reading time total">18 mins.</span>
 </div>
 
 

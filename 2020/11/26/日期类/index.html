@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.4.2">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -248,20 +248,6 @@
               </span>
               <span class="post-meta-item-text">Views: </span>
               <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>737</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
             </span>
 
         </div>
@@ -273,19 +259,19 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><strong><em>题目描述：</em></strong><br>编写一个日期类，要求按xxxx-xx-xx 的格式输出日期，实现加一天的操作。</p>
-<a id="more"></a> 
+        <p><em><strong>题目描述：</strong></em><br>编写一个日期类，要求按xxxx-xx-xx 的格式输出日期，实现加一天的操作。</p>
+<span id="more"></span> 
 
 <hr>
-<p><strong><em>输入格式：</em></strong><br>输入第一行表示测试用例的个数m，接下来m行每行有3个用空格隔开的整数，分别表示年月日。测试数据不会有闰年。</p>
-<p><strong><em>输出格式：</em></strong><br>输出m行。按xxxx-xx-xx的格式输出，表示输入日期的后一天的日期。</p>
+<p><em><strong>输入格式：</strong></em><br>输入第一行表示测试用例的个数m，接下来m行每行有3个用空格隔开的整数，分别表示年月日。测试数据不会有闰年。</p>
+<p><em><strong>输出格式：</strong></em><br>输出m行。按xxxx-xx-xx的格式输出，表示输入日期的后一天的日期。</p>
 <hr>
-<p><strong><em>输入样例：</em></strong><br>2<br>1999 10 20<br>2001 1 31</p>
-<p><strong><em>输出样例：</em></strong><br>1999-10-21<br>2001-02-01</p>
+<p><em><strong>输入样例：</strong></em><br>2<br>1999 10 20<br>2001 1 31</p>
+<p><em><strong>输出样例：</strong></em><br>1999-10-21<br>2001-02-01</p>
 <hr>
-<p><strong><em>train of thought：</em></strong></p>
-<p><strong><em>code:</em></strong></p>
-<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"><span class="built_in">int</span> months[<span class="number">13</span>] = &#123;<span class="number">0</span>, <span class="number">31</span>, <span class="number">28</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>&#125;;</span><br><span class="line"><span class="built_in">int</span> main()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">int</span> <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>;</span><br><span class="line">    scanf(<span class="string">&quot;%d%d%d&quot;</span>, &amp;<span class="built_in">year</span>, &amp;<span class="built_in">month</span>, &amp;<span class="built_in">day</span>);</span><br><span class="line">    <span class="built_in">day</span>++;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">day</span> == months[<span class="built_in">month</span>] + <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">month</span>++;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">month</span> == <span class="number">13</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">year</span>++;</span><br><span class="line">            <span class="built_in">month</span> = <span class="number">1</span>;</span><br><span class="line">            <span class="built_in">day</span> = <span class="number">1</span>;</span><br><span class="line">            printf(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">day</span> = <span class="number">1</span>;</span><br><span class="line">            printf(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        printf(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><em><strong>train of thought：</strong></em></p>
+<p><em><strong>code:</strong></em></p>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.<span class="property">h</span>&gt;</span><br><span class="line"><span class="type">int</span> months[<span class="number">13</span>] = &#123;<span class="number">0</span>, <span class="number">31</span>, <span class="number">28</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>, <span class="number">30</span>, <span class="number">31</span>&#125;;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span>()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>;</span><br><span class="line">    <span class="title function_">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>, &amp;<span class="built_in">year</span>, &amp;<span class="built_in">month</span>, &amp;<span class="built_in">day</span>);</span><br><span class="line">    <span class="built_in">day</span>++;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">day</span> == months[<span class="built_in">month</span>] + <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">month</span>++;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">month</span> == <span class="number">13</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">year</span>++;</span><br><span class="line">            <span class="built_in">month</span> = <span class="number">1</span>;</span><br><span class="line">            <span class="built_in">day</span> = <span class="number">1</span>;</span><br><span class="line">            <span class="title function_">printf</span>(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">day</span> = <span class="number">1</span>;</span><br><span class="line">            <span class="title function_">printf</span>(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="title function_">printf</span>(<span class="string">&quot;%04d-%02d-%02d\n&quot;</span>, <span class="built_in">year</span>, <span class="built_in">month</span>, <span class="built_in">day</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -479,16 +465,6 @@ src="//music.163.com/outchain/player?type=2&id=469838125&auto=1&height=66">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">SRP05</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-    <span title="Symbols count total">20k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="Reading time total">18 mins.</span>
 </div>
 
 
